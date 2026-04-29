@@ -16,7 +16,7 @@ spec:
       securityContext:
         runAsNonRoot: false
         runAsUser: 0
-      script:
+      script: |
         #!/usr/bin/env sh
         set -eu
         echo "Removing all files from ${WORKSPACE_SOURCE_PATH} ..."
